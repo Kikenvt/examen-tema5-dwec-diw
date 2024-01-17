@@ -48,7 +48,7 @@
     background: url(/assets/imgs/background.jpg) center/cover;
     height: var(--image-height);
     position: relative;
-    clip-path: ellipse(0 0 100% 0 0 50%);
+    clip-path: ellipse(49% 35% at 50% 50%);
 }
 
 .hero-image:before{
@@ -100,6 +100,7 @@ span{
 .info-container{
     display: flex;
     flex-direction: row;
+    color: var(--form-color);
 }
 
 form{
@@ -124,6 +125,8 @@ input, textarea{
     border: none;
     border-radius: 0.5rem;
     resize: none;
+    background-color: var(--background-color);
+    color: var(--form-color);
 }
 
 .btn{
