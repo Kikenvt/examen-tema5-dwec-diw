@@ -21,12 +21,12 @@
             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
             <input type="text" name="email" id="email" placeholder="Correo electronico">
             <label for="info">Solicitud de información adicional</label>
-            <input type="radio" name="info" id="info">
+            <input type="radio" name="info" id="info" checked="true">
             <label for="ruta">Reserva de ruta</label>
             <input type="radio" name="ruta" id="ruta">
-            <input type="button" value="Info">
+            <input type="button" id="infoBtn" value="Info">
             <textarea name="mensaje" id="mensaje" placeholder="Por favor, inserta un mensaje" cols="30" rows="10"></textarea>
-            <input type="button" value="Enviar">
+            <input type="submit" id="enviar" value="Enviar">
 
             <ul id="errores" class="errores"></ul>
         </form>

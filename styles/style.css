@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Nova Square';
+    src: url(/assets/fonts/NovaSquare-Regular.ttf);
+}
+
+:root{
+    --h1-font-size: 6rem;
+    --h2-font-size: 4rem;
+    --span-font-size: 3rem;
+    --h1-color: #560361;
+    --h2-color: #560361;
+    --span-color: #560361;
+}
+
+@media screen and (max-width: 764px) {
+
+    :root{
+        --h1-font-size: 3rem;
+        --h2-font-size: 2rem;
+        --span-font-size: 1.5rem;
+        --h1-color: #560361;
+        --h2-color: #560361;
+        --span-color: #560361;
+    }
+    
+}
+
+*, ::after, ::before{
+    margin: 0;
+    font-family: 'Nova Square';
+}
+
+.hero-image{
+    background: url(/assets/imgs/background.jpg) center/cover;
+    height:;
+}
