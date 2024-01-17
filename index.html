@@ -21,13 +21,15 @@
         <form id="formulario" action="/templates/envioCorrecto.html" method="get">
             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
             <input type="text" name="email" id="email" placeholder="Correo electronico">
+            <div class="info-container">
             <label for="info">Solicitud de información adicional</label>
             <input type="radio" name="info" id="info" checked="true">
             <label for="ruta">Reserva de ruta</label>
             <input type="radio" name="info" id="ruta">
-            <input type="button" id="infoBtn" value="Info">
-            <textarea name="mensaje" id="mensaje" placeholder="Por favor, inserta un mensaje" cols="30" rows="10"></textarea>
-            <input type="submit" id="enviar" value="Enviar">
+            </div>
+            <input type="button" id="infoBtn" value="Info" class="btn">
+            <textarea name="mensaje" id="mensaje" placeholder="Por favor, inserta un mensaje..." cols="30" rows="10"></textarea>
+            <input type="submit" id="enviar" value="Enviar" class="btn">
 
             <ul id="errores" class="errores"></ul>
         </form>
