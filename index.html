@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Asturian Routes</title>
+</head>
+<body>
+    <div class="main-hero-container">
+        <div class="hero-image">
+            <div class="hero-body">
+                <h1>Asturian Natural Trails</h1>
+                <span>Las mejores rutas de montaña para hacer senderismo</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-form">
+        <form id="formulario" action="/templates/envioCorrecto.html" method="get">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="email" id="email" placeholder="Correo electronico">
+            <label for="info">Solicitud de información adicional</label>
+            <input type="radio" name="info" id="info">
+            <label for="ruta">Reserva de ruta</label>
+            <input type="radio" name="ruta" id="ruta">
+            <input type="button" value="Info">
+            <textarea name="mensaje" id="mensaje" placeholder="Por favor, inserta un mensaje" cols="30" rows="10"></textarea>
+            <input type="button" value="Enviar">
+
+            <ul id="errores" class="errores"></ul>
+        </form>
+    </div>
+    
+</body>
+</html>
