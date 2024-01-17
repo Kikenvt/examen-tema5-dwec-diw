@@ -21,16 +21,17 @@ const validarFormulario = (e) =>{
     mensajesErrores = []
 
     nombre.value.trim().length === 0 && mensajesErrores.push('El nombre no puede ser un campo vacio')
-    !/^[A-Z][a-zA-Z]{1,40}$/.test(nombre.value.trim()) && mensajesErrores.push('El nombre no contiene carácteres validos')
+    !/^[A-Z][a-z]{1,40}$/.test(nombre.value.trim()) && mensajesErrores.push('El nombre no contiene carácteres validos')
 
-    !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email.value.trim()) && mensajesErrores.push('Introduce una direccion de corro válida')
+    !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(email.value.trim()) && mensajesErrores.push('Introduce una dirección de correo válida')
 
-    mensaje.value.trim().lenght < 10 && mensajesErrores.push('El mensaje es demasiado corto')
+    mensaje.value.trim().length < 10 && mensajesErrores.push('El mensaje es demasiado corto')
 
     if(mensajesErrores.length === 0 && confirm('¿Estas seguro de enviar el formulario?')){
         formulario.submit()
-    }else if(mensajesErrores > 0){
+    }else if(mensajesErrores.length > 0){
         errores.textContent = ""
+        console.log(mensajesErrores)
         mensajesErrores.forEach(function (mensaje){
             const li = document.createElement('li')
             li.textContent = mensaje
@@ -39,4 +40,13 @@ const validarFormulario = (e) =>{
     }
 }
 
+const validarinfo = () =>{
+    if(info.checked){
+        alert('AAjajajajj')
+    }else if(ruta.checked){
+        alert('ohhhh')
+    }
+}
+
+infoBtn.addEventListener('click', validarinfo)
 formulario.addEventListener('submit', validarFormulario)

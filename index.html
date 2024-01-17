@@ -17,13 +17,14 @@
         </div>
     </div>
     <div class="main-form">
+        <h2>Contacta con nosotros:</h2>
         <form id="formulario" action="/templates/envioCorrecto.html" method="get">
             <input type="text" name="nombre" id="nombre" placeholder="Nombre">
             <input type="text" name="email" id="email" placeholder="Correo electronico">
             <label for="info">Solicitud de información adicional</label>
             <input type="radio" name="info" id="info" checked="true">
             <label for="ruta">Reserva de ruta</label>
-            <input type="radio" name="ruta" id="ruta">
+            <input type="radio" name="info" id="ruta">
             <input type="button" id="infoBtn" value="Info">
             <textarea name="mensaje" id="mensaje" placeholder="Por favor, inserta un mensaje" cols="30" rows="10"></textarea>
             <input type="submit" id="enviar" value="Enviar">
@@ -31,6 +32,6 @@
             <ul id="errores" class="errores"></ul>
         </form>
     </div>
-    
+    <script src="/scripts/index.js"></script>
 </body>
 </html>
