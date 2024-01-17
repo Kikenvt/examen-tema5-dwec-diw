@@ -51,9 +51,9 @@ const validarFormulario = (e) =>{
 // Función para validar el boton de info
 const validarInfo = () =>{
     if(info.checked){
-        alert('AAjajajajj')
+        alert('¿Tienes alguna duda? Selecciona esta opción para tratar tu consulta con mayor detenimiento.')
     }else if(ruta.checked){
-        alert('ohhhh')
+        alert('El senderismo en Asturias es una actividad apasionante. Selecciona esta opción y te aportaremos las rutas disponibles, horarios... vía email.')
     }
 }
 
